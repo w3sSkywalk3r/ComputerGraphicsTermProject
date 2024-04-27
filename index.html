@@ -1,0 +1,51 @@
+<head>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        @font-face {
+             font-family: 'Jansina';
+            src: url('assets/fonts/jansina.ttf') format('truetype');
+        }
+        #word {
+            color: yellow;
+            font-family: 'Jansina';
+            font-size: 60px;
+        }
+        #displayText {
+            color: yellow;
+            font-family: 'Jansina';
+            font-size: 60px;
+        }
+    </style>
+<body>
+    <div style="position: relative; display: inline-block">
+      <div style="position: absolute; display: flex; width: 100%; align-items: center; padding: 20px">
+        <!-- player health -->
+        <div style="position: relative; height: 30px; width: 100%; display: flex; justify-content: flex-end">
+            <div style="background-color: red; height: 30px; width: 100%"></div>
+            <div id="playerHealth" style="position: absolute; background: green; top: 0; right: 0; bottom: 0; width: 100%"></div>
+        </div>
+        <!-- timer -->
+        <div id="word"
+     style="background-color: red;
+     width: 100px; 
+     height: 100px;
+    display: flex; 
+    align-items: center;
+    justify-content: center">
+</div>
+        <!-- enemy health -->
+        <div style="position: relative; height: 30px; width: 100%">
+            <div style="background-color: red; height: 30px"></div>
+            <div id="enemyHealth" style="position: absolute; background: green; top: 0; right: 0; bottom: 0; left: 0"></div>
+        </div>
+      </div>
+      <div id="displayText" style="position: absolute; color: yellow; align-items: center; justify-content: center; top: 0; bottom: 0; right: 0; left: 0; display: none">DRAW</div>
+<canvas></canvas>
+</div>
+
+<script src=".js/functions.js"></script>
+<script src=".js/classes.js"></script>
+<script src="index.js"></script>
+</body>
